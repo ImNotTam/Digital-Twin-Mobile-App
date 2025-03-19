@@ -4,16 +4,16 @@ import { Tabs } from "expo-router";
 import React from "react";
 
 const navigationList = [
-  { name: "index", title: "Home", icon: "home" },
   { name: "articles", title: "Articles", icon: "book" },
   { name: "explore", title: "Explore", icon: "tree" },
+  { name: "index", title: "Home", icon: "home" },
   { name: "saved", title: "Saved", icon: "bookmark" },
   { name: "profile", title: "Profile", icon: "user" },
 ];
 
 const _Layout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "#000" }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: "#61AF2B" }}>
       {navigationList.map((nav) => (
         <Tabs.Screen
           key={nav.title}
@@ -34,8 +34,8 @@ const _Layout = () => {
                     ? "bookmark"
                     : "user"
                 }
-                size={24}
-                color={focused ? "#000" : "#ccc"}
+                size={30}
+                color={focused ? "#61AF2B" : "#8C8C8C"} // Change the color of the icon when it is focused
               />
             ),
           }}
