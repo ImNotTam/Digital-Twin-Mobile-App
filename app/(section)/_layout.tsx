@@ -7,7 +7,7 @@ const navigationList = [
   { name: "articles", title: "Articles", icon: "book" },
   { name: "explore", title: "Explore", icon: "tree" },
   { name: "index", title: "Home", icon: "home" },
-  { name: "saved", title: "Saved", icon: "bookmark" },
+  { name: "garden", title: "Garden", icon: "leaf" },
   { name: "profile", title: "Profile", icon: "user" },
 ];
 
@@ -30,8 +30,8 @@ const _Layout = () => {
                     ? "book"
                     : nav.icon === "tree"
                     ? "tree"
-                    : nav.icon === "bookmark"
-                    ? "bookmark"
+                    : nav.icon === "leaf"
+                    ? "leaf"
                     : "user"
                 }
                 size={30}
