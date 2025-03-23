@@ -22,7 +22,9 @@ const TreeCard = (props: TreeCardProps) => {
         </View>
       </View>
       <View style={TCstyles.view2}>
-        <Text style={TCstyles.price}>Price</Text>
+        <View>
+          <Text style={TCstyles.price}>Price</Text>
+        </View>
         <View style={TCstyles.view3}>
           <View>
             <Fontisto

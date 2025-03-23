@@ -39,15 +39,17 @@ const RecentTree = () => {
   return (
     <View style={RTstyles.view1}>
       <RecentTreeSection />
-      <FlatList
-        data={treeList}
-        keyExtractor={(item) => item.id.toString()}
-        horizontal={true}
-        renderItem={({ item }) => (
-          <TreeCard name={item.name} image={item.image} />
-        )}
-        style={RTstyles.flatlist}
-      />
+      <View>
+        <FlatList
+          data={treeList}
+          keyExtractor={(item) => item.id.toString()}
+          horizontal={true}
+          renderItem={({ item }) => (
+            <TreeCard name={item.name} image={item.image} />
+          )}
+          style={RTstyles.flatlist}
+        />
+      </View>
     </View>
   );
 };
@@ -71,7 +73,6 @@ const RTstyles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "space-between",
     rowGap: 10,
-    marginBottom: 15,
   },
   flatlist: {
     flexDirection: "row",

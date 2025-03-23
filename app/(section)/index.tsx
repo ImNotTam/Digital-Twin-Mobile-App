@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet } from "react-native";
+import { View, ScrollView, StyleSheet } from "react-native";
 
 import SearchBar from "@/components/homePage/SearchBar";
 import Header from "@/components/homePage/Header";
@@ -7,17 +7,22 @@ import Farm from "@/components/homePage/Farm";
 
 export default function Index() {
   return (
-    <ScrollView style={styles.scroolView}>
-      <Header />
-      <SearchBar />
-      <RecentTree />
-      <Farm />
+    <ScrollView>
+      <View style={styles.view}>
+        <Header />
+        <SearchBar />
+        <RecentTree />
+        <Farm />
+      </View>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  scroolView: {
-    padding: 15,
+  view: {
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    rowGap: 20,
+    padding: 10,
   },
 });

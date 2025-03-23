@@ -122,9 +122,8 @@ const FarmCard = (props: FarmCardProps) => {
 const FarmStyle = StyleSheet.create({
   view: {
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     rowGap: 10,
-    marginBottom: 15,
   },
 });
 
@@ -140,7 +139,6 @@ const FarmCategoryStyle = StyleSheet.create({
 
 const FarmBarStyle = StyleSheet.create({
   view: {
-    flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
   },
